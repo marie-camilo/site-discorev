@@ -1,0 +1,5 @@
+---------- A revoir : ---------------
+- CSS séparé : très brouillon et peu clair (utilisation d'une librairie ? ex:Tailwind)
+- Ajout du back
+- Revoir l'arborescence
+- Adapter la structure de développement (ex:MVC)  
