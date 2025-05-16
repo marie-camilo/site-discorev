@@ -45,6 +45,11 @@
     font-weight: bold;
 }
 
+.required-fields-note{
+    color: red;
+    text-align: right;
+}
+
 .auth-options {
     display: flex;
     justify-content: space-around;
