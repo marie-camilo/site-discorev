@@ -1,31 +1,32 @@
 .cta-button {
-    display: inline-block;
-    background: var(--orangish);
-    color: var(--white) !important;
-    padding: 0.8rem 2rem;
-    font-size: 1rem;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s ease;
+    gap: 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 45px;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    background-color: var(--orangish);
+    transition: background 0.3s ease;
 }
 
 .cta-button-transparent {
-    display: inline-block;
-    background-color: transparent;
-    color: var(--indigo);
-    border: 2px solid var(--indigo);
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 25px;
-    text-decoration: none;
-    transition: background 0.3s ease, color 0.3s ease;
+    gap: 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 45px;
+    cursor: pointer;
+    color: black;
+    font-weight: 500;
+    border: 1px solid #3f3d3d;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
 }
 
 .cta-button-transparent:hover {
     background-color: var(--orangish);
-    border: 2px solid var(--orangish);
+    border: 1px solid #c75b1a;
     color: var(--white);
 }
 
@@ -38,13 +39,13 @@
     background: #e55b00;
 }
 
-.cta-link{
-    color: var(--larch-bolete);
+a.cta-link{
+    color: var(--aquamarine);
     transition: 0.3s ease;
 }
 
 .cta-link:hover {
-    color: #e55b00;
+    color: var(--indigo);
 }
 
 .highlight-blue {

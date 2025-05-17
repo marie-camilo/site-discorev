@@ -6,15 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Se connecter - Discorev</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/site-vitrine/assets/css/login.css">
+  <link rel="stylesheet" href="../assets/css/login.css">
 </head>
 <body>
+
 <section class="login-container">
   <!-- Box de Connexion -->
   <div class="login-box">
     <!-- Logo -->
     <div class="login-logo-container">
-      <img src="/site-vitrine/assets/img/logo-dark.png" alt="Logo Discorev" class="login-logo-img">
+      <img src="../assets/img/logo-dark.png" alt="Logo Discorev" class="login-logo-img">
     </div>
 
     <!-- Titre -->
