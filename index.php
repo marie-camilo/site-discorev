@@ -1,17 +1,26 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Discorev</title>
+    <meta name="description" content="Discorev - Plateforme d'emploi dans le secteur social. Trouvez votre prochain emploi ou recrutez les meilleurs talents.">
+    <meta name="keywords" content="emploi social, recrutement, carrière sociale, offres d'emploi">
+    <title>Discorev - L'emploi social à portée de main</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/cta.css">
 </head>
+
 <body>
-<?php include('includes/header.php'); ?>
+    <?php
+    require_once './includes/load_env.php';
+    loadEnv();
+    include('includes/header.php');
+    ?>
 
 <section class="hero container py-5">
     <div class="row align-items-center">
@@ -193,24 +202,24 @@
 <section class="user-choice">
     <h2>Que vous soyez recruteur ou candidat, notre plateforme vous accompagne.</h2>
 
-    <div class="choice-container">
-        <!-- Carte Employeur -->
-        <a href="pages/employeurs.html" class="choice-card employer">
-            <i class="fa fa-briefcase"></i>
-            <h3>Je suis employeur</h3>
-            <p>Publiez des offres et recrutez les meilleurs talents facilement.</p>
-            <span class="cta-button">Accéder au service</span>
-        </a>
+        <div class="choice-container">
+            <!-- Carte Employeur -->
+            <a href="pages/employeurs.php" class="choice-card employer">
+                <i class="fa fa-briefcase"></i>
+                <h3>Je suis employeur</h3>
+                <p>Publiez des offres et recrutez les meilleurs talents facilement.</p>
+                <span class="cta-button">Accéder au service</span>
+            </a>
 
-        <!-- Carte Candidat -->
-        <a href="pages/candidats.html" class="choice-card candidate">
-            <i class="fa fa-user"></i>
-            <h3>Je suis candidat</h3>
-            <p>Recherchez un emploi et déposez votre CV en quelques clics.</p>
-            <span class="cta-button">Trouver un job</span>
-        </a>
-    </div>
-</section>
+            <!-- Carte Candidat -->
+            <a href="pages/candidats.php" class="choice-card candidate">
+                <i class="fa fa-user"></i>
+                <h3>Je suis candidat</h3>
+                <p>Recherchez un emploi et déposez votre CV en quelques clics.</p>
+                <span class="cta-button">Trouver un job</span>
+            </a>
+        </div>
+    </section>
 
 <section class="competences">
     <div class="container">

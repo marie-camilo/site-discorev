@@ -196,6 +196,55 @@ body {
     border: none;
 }
 
+/* Ajout d'un container principal pour les offres */
+.offers-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Modification de la section des offres */
+.offers-list {
+    padding: 20px 0; /* Suppression du padding horizontal */
+}
+
+.offer-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px; /* Augmentation du padding pour plus d'espace */
+    margin-bottom: 20px; /* Augmentation de la marge entre les cartes */
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.offer-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Amélioration de la mise en page des cartes */
+.offer-title {
+    font-weight: 600;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: var(--black);
+}
+
+.offer-meta {
+    color: #666;
+    font-size: 0.95em;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.filters button.active {
+    background-color: #000;
+    color: #fff;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     .search-filter {
@@ -213,5 +262,13 @@ body {
 
     .cta-banner img {
         margin: 0 0 15px 0;
+    }
+
+    .offers-container {
+        padding: 0 15px;
+    }
+    
+    .offer-card {
+        padding: 15px;
     }
 }

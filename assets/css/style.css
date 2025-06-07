@@ -7,7 +7,6 @@
     --larch-bolete: #ffa977;
     --wondrous-blue: #cadae5;
     --sand: #fafaf7;
-    --dark-sand: #e5e0db;
     --white: #ECECEC;
     --black: #1E1E1E;
 }
@@ -31,8 +30,11 @@ body{
     background-color: var(--sand);
 }
 
-.hero{
-    min-height: 95vh;
+img{
+    width: 100%;
+}
+
+.hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,7 +49,14 @@ body{
 .hero-left h2 {
     font-size: 1.5rem;
     color: #333;
+    margin-bottom: 2rem;
     font-weight: 500;
+}
+
+.hero-left h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
 }
 
 .search-bar {
@@ -62,32 +71,59 @@ body{
     border: none;
     box-shadow: none;
     background: transparent;
+    max-width: 250px;
+}
+
+.search-input-container .location {
+    border: none;
+    outline: none;
     font-size: 1rem;
     padding-left: 0;
 }
 
 .separator {
+    height: 20px;
     width: 1px;
-    height: 30px;
     background: #ccc;
 }
 
-.btn-container button.btn {
-    min-width: 150px;
-    font-weight: 600;
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
 }
 
-@media (max-width: 750px) {
-    .welcome-img {
-        visibility: hidden;
-    }
+.hero-right img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
-    .hero{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 30px;
+    padding: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 900px;
+    margin: auto;
+}
+
+.search-btn {
+    background: var(--orangish);
+    color: var(--white);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-right: 10px;
+}
 
     .hero-left h1 {
         font-size: 2rem;
@@ -107,7 +143,7 @@ body{
     .btn-container {
         justify-content: center;
     }
-}
+
 
 /*AUTRE SECTION */
 
@@ -204,7 +240,8 @@ body{
     text-align: left;
     transition: 0.3s ease;
     cursor: pointer;
-    height: 100%;
+    width: 100%;
+    max-width: 300px;
 }
 
 .company-card:hover {
@@ -283,6 +320,7 @@ body{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
+    justify-content: center;
     margin: 2rem 0;
 }
 
@@ -331,10 +369,16 @@ body{
     padding: 4rem 0;
 }
 
+.app-mockup {
+    flex: 1;
+    width: 100%;
+    max-width: 400px;
+}
+
 .app-mockup img {
     width: 100%;
-    max-width: 500px;
     height: auto;
+    object-fit: contain;
 }
 
 .app-infos {
@@ -435,6 +479,10 @@ body{
 .find-job-image img {
     width: 100%;
     max-width: 500px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.find-job-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
