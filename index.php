@@ -86,6 +86,8 @@
             </div>
         </div>
 
+        <p>Test</p>
+
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
             <div class="company-card">
                 <img src="assets/img/senior-compagnie.png" alt="Entreprise 4">
